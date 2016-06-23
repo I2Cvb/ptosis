@@ -227,3 +227,28 @@ pip install <package-name>
 ```
 
 *Thank you for cleanly contributing to the scikit-learn ecosystem!*
+
+# Sik 
+## Recomendations
+#### Use a virtual environment (Virtualenv + VirtualenvWrapper)
+
+Virtual-environments are not **virtual machines**.
+Virtual-environments are used to avoid library classing between the libraries of a project and those fom the system.
+Find more information in this [virtual environment post] describing how to use virtual environment for a [mozilla marketplace testing].
+
+Use the following to create a `simblefaron` environment based on the `./requirements.txt` associated with the source directory `./src`:
+
+```
+mkvirtualenv simblefaron -a . -r ./requirements.txt
+```
+
+Notice that `mkvirtualenv` activates such environment.
+The command `deactivate` is used to exit the virtual environment.
+Once the virtual environment exist on the system, the command `workon simblefaron` is rather convenient since it jumps into the working directory and activates the virtual enviroment.
+
+**Remember** to keep `requirements.txt` up to date.
+For more details regarding the usage of the virtual enviroment, please look at the [command reference].
+
+[virtual environment post]: http://www.silverwareconsulting.com/index.cfm/2012/7/24/Getting-Started-with-virtualenv-and-virtualenvwrapper-in-Python
+[mozilla marketplace testing]: https://github.com/mozilla/marketplace-tests
+[command reference]:http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html
