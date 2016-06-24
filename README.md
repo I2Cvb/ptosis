@@ -249,6 +249,25 @@ Once the virtual environment exist on the system, the command `workon simblefaro
 **Remember** to keep `requirements.txt` up to date.
 For more details regarding the usage of the virtual enviroment, please look at the [command reference].
 
+## Initial data encription (a tar.gz encripted [taken from](http://superuser.com/questions/162624/how-to-password-protect-gzip-files-on-the-command-line))
+
+tarring and compression is a job for `tar` and `gzip` or `bzip2`, crypto is a job for either `gpg` or `openssl`:
+
+**Encrypt**
+
+     % tar cz folder_to_encrypt | \
+          openssl enc -aes-256-cbc -e > out.tar.gz.enc
+
+**Decrypt**
+
+     % openssl aes-256-cbc -d -in out.tar.gz.enc | tar xz
+
+**Or using gpg**
+
+     % gpg --encrypt out.tar.gz
+
+the openssl-variant uses symetric encryption, you would have to tell the receiving party about the used 'password' (aka 'the key'). the gpg-variant uses a combination of symetric and asymetric encryption, you use the key of the receiving party (which means that you do not have to tell any password involved to anyone) to create a session key and crypt the content with that key.
+
 [virtual environment post]: http://www.silverwareconsulting.com/index.cfm/2012/7/24/Getting-Started-with-virtualenv-and-virtualenvwrapper-in-Python
 [mozilla marketplace testing]: https://github.com/mozilla/marketplace-tests
 [command reference]:http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html
