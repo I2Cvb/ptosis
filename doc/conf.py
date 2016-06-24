@@ -126,6 +126,8 @@ pygments_style = 'sphinx'
 autodoc_default_flags = ['members']
 autosummary_generate = True
 
+todo_include_todos = True
+
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for

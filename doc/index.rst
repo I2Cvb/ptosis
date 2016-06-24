@@ -21,6 +21,11 @@ contains a single estimator with unit tests.
 See the `README <https://github.com/vighneshbirodkar/project-template/blob/master/README.md>`_
 for more information.
 
+Todo
+====
+
+    .. todolist::
+
 
 Indices and tables
 ==================
