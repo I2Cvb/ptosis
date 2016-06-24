@@ -6,4 +6,4 @@ API Documentation
 Utils
 =====
 
-.. automodule:: simblefaron.Utils
+.. automodule:: simblefaron.utils
