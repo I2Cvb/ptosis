@@ -64,3 +64,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+#Sik stuff
+sk_vmrequirements.txt
