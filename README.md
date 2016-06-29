@@ -1,8 +1,8 @@
 #project-template - A template for scikit-learn extensions
 
-[![Travis Status](https://travis-ci.org/scikit-learn-contrib/project-template.svg?branch=master)](https://travis-ci.org/scikit-learn-contrib/project-template)
+[![Tavis Status](https://travis-ci.org/I2Cvb/simblefaron.svg?branch=master)](https://travis-ci.org/I2Cvb/simblefaron)
 [![Coveralls Status](https://coveralls.io/repos/scikit-learn-contrib/project-template/badge.svg?branch=master&service=github)](https://coveralls.io/r/scikit-learn-contrib/project-template)
-[![CircleCI Status](https://circleci.com/gh/scikit-learn-contrib/project-template.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/scikit-learn-contrib/project-template/tree/master)
+[![CircleCI Status](https://circleci.com/gh/I2Cvb/simblefaron.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/I2Cvb/simblefaron/tree/master)
 
 **project-template** is a template project for 
 [scikit-learn](http://scikit-learn.org/) 
